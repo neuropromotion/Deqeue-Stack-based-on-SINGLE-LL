@@ -124,7 +124,7 @@ bool DownloadData (List * plist, char * st)
 {
       bool cond = true;
       FILE * ptr;
-      uint32_t size;
+      uint32_t size = 0;
       uint32_t ctr = 0;
       List temp;
       if ((ptr = fopen(st, "rb")) == NULL)
